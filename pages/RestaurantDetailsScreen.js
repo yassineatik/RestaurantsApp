@@ -145,7 +145,7 @@ const RestaurantDetailsScreen = ({ navigation, route }) => {
                             </Text>
                         </View>
                     </View>
-
+                    {/* 
                     {item.services.takeaway ? (
                         item.services.takeaway.enabled == true &&
                         item.services.takeaway.schedules[0] ? (
@@ -202,6 +202,15 @@ const RestaurantDetailsScreen = ({ navigation, route }) => {
                                 </View>
                             </View>
                         ) : null
+                    ) : null} */}
+
+                    {item.cuisines[0]?._id ? (
+                        <View style={{ gap: 10 }}>
+                            <Text style={Styles.DetailTitle}>Cuisine :</Text>
+                            <Text style={Styles.Info}>
+                                {item.cuisines[0].name["en"]}
+                            </Text>
+                        </View>
                     ) : null}
                 </View>
             </ScrollView>
