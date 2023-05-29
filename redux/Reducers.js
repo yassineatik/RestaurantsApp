@@ -11,12 +11,12 @@ AsyncStorage.getItem("favoriteRestaurants")
             try {
                 initialState.favoriteRestaurants = JSON.parse(data);
             } catch (error) {
-                console.error("Invalid JSON data in AsyncStorage:", error);
+                console.error("Invalid JSON data in Asyncstorage:", error);
             }
         }
     })
     .catch((error) => {
-        console.error("Error retrieving data from AsyncStorage:", error);
+        console.error("Error retrieving data from Asyncstorage:", error);
     });
 
 export const RestaurantReducer = (state = initialState, action) => {
