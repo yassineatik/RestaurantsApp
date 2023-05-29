@@ -145,65 +145,6 @@ const RestaurantDetailsScreen = ({ navigation, route }) => {
                             </Text>
                         </View>
                     </View>
-                    {/* 
-                    {item.services.takeaway ? (
-                        item.services.takeaway.enabled == true &&
-                        item.services.takeaway.schedules[0] ? (
-                            <View style={{ gap: 10 }}>
-                                <Text style={Styles.DetailTitle}>
-                                    Take away Schedules :
-                                </Text>
-
-                                <View
-                                    style={{
-                                        flexDirection: "row",
-                                        gap: 10,
-                                        alignItems: "center",
-                                    }}
-                                >
-                                    <Text
-                                        style={{
-                                            color: Colors.white,
-                                            fontWeight: "500",
-                                            fontSize: 17,
-                                        }}
-                                    >
-                                        Starts at :{" "}
-                                    </Text>
-                                    <Text style={Styles.Info}>
-                                        {item.services.takeaway.enabled == true
-                                            ? item.services.takeaway
-                                                  .schedules[0].start
-                                            : "Not Available"}
-                                    </Text>
-                                </View>
-                                <View
-                                    style={{
-                                        flexDirection: "row",
-                                        gap: 10,
-                                        alignItems: "center",
-                                    }}
-                                >
-                                    <Text
-                                        style={{
-                                            color: Colors.white,
-                                            fontWeight: "500",
-                                            fontSize: 17,
-                                        }}
-                                    >
-                                        Ends At :
-                                    </Text>
-                                    <Text style={Styles.Info}>
-                                        {item.services.takeaway.enabled == true
-                                            ? item.services.takeaway
-                                                  .schedules[0].end
-                                            : "Not Available"}
-                                    </Text>
-                                </View>
-                            </View>
-                        ) : null
-                    ) : null} */}
-
                     {item.cuisines[0]?._id ? (
                         <View style={{ gap: 10 }}>
                             <Text style={Styles.DetailTitle}>Cuisine :</Text>
